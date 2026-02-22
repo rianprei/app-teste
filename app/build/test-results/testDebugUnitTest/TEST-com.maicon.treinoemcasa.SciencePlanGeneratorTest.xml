@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.maicon.treinoemcasa.SciencePlanGeneratorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-02-22T20:09:42" hostname="maicon-Z390-AORUS-ELITE" time="0.069">
+  <properties/>
+  <testcase name="generate uses training split respecting days per week" classname="com.maicon.treinoemcasa.SciencePlanGeneratorTest" time="0.052"/>
+  <testcase name="generate creates non-empty workout prescriptions on workout days" classname="com.maicon.treinoemcasa.SciencePlanGeneratorTest" time="0.007"/>
+  <testcase name="generate returns exactly 28 days" classname="com.maicon.treinoemcasa.SciencePlanGeneratorTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

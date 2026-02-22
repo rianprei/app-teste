@@ -1,0 +1,127 @@
+package com.maicon.treinoemcasa.features.challenges
+
+import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Card
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.StrokeCap
+import androidx.compose.ui.unit.dp
+
+data class WeeklyEvolutionPoint(
+    val label: String,
+    val totalVolume: Double,
+    val totalReps: Int,
+    val sessions: Int
+)
+
+@Composable
+fun WeeklyEvolutionChart(
+    data: List<WeeklyEvolutionPoint>,
+    modifier: Modifier = Modifier
+) {
+    Card(modifier = modifier) {
+        Column(
+            modifier = Modifier.padding(12.dp),
+            verticalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            Text("Evolução semanal de volume", style = MaterialTheme.typography.titleMedium)
+
+            if (data.isEmpty()) {
+                Text("Registre sessões para visualizar o gráfico.")
+                return@Column
+            }
+
+            val lineColor = MaterialTheme.colorScheme.primary
+            val dotColor = MaterialTheme.colorScheme.secondary
+
+            Canvas(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(200.dp)
+            ) {
+                val left = 24f
+                val right = size.width - 12f
+                val top = 12f
+                val bottom = size.height - 24f
+                val width = right - left
+                val height = bottom - top
+
+                val maxVolume = data.maxOf { it.totalVolume }.coerceAtLeast(1.0)
+                val spacing = if (data.size == 1) 0f else width / (data.lastIndex.toFloat())
+
+                val points = data.mapIndexed { index, point ->
+                    val x = left + spacing * index
+                    val normalized = (point.totalVolume / maxVolume).toFloat()
+                    val y = bottom - normalized * height
+                    Offset(x, y)
+                }
+
+                drawLine(
+                    color = MaterialTheme.colorScheme.outline.copy(alpha = 0.6f),
+                    start = Offset(left, bottom),
+                    end = Offset(right, bottom),
+                    strokeWidth = 2f
+                )
+                drawLine(
+                    color = MaterialTheme.colorScheme.outline.copy(alpha = 0.6f),
+                    start = Offset(left, top),
+                    end = Offset(left, bottom),
+                    strokeWidth = 2f
+                )
+
+                if (points.size > 1) {
+                    points.zipWithNext().forEach { (start, end) ->
+                        drawLine(
+                            color = lineColor,
+                            start = start,
+                            end = end,
+                            strokeWidth = 5f,
+                            cap = StrokeCap.Round
+                        )
+                    }
+                }
+
+                points.forEach { point ->
+                    drawCircle(
+                        color = dotColor,
+                        radius = 6f,
+                        center = point
+                    )
+                }
+
+                drawLine(
+                    color = lineColor.copy(alpha = 0.25f),
+                    start = Offset(left, top),
+                    end = Offset(right, top),
+                    strokeWidth = 2f,
+                    cap = StrokeCap.Round
+                )
+
+                drawContext.canvas.nativeCanvas.apply {
+                    val textPaint = android.graphics.Paint().apply {
+                        color = android.graphics.Color.GRAY
+                        textSize = 28f
+                        textAlign = android.graphics.Paint.Align.LEFT
+                    }
+                    drawText("0", 2f, bottom + 8f, textPaint)
+                    drawText(maxVolume.toInt().toString(), 2f, top + 8f, textPaint)
+                }
+            }
+
+            Text(
+                text = data.joinToString(" | ") {
+                    "${it.label}: ${it.sessions} sess., ${it.totalReps} reps, vol ${it.totalVolume.toInt()}"
+                },
+                style = MaterialTheme.typography.bodySmall
+            )
+        }
+    }
+}

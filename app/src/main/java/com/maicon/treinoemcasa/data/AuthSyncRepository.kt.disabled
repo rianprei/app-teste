@@ -1,0 +1,167 @@
+package com.maicon.treinoemcasa.data
+
+import android.content.Context
+import com.google.firebase.FirebaseApp
+import com.google.firebase.FirebaseOptions
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.firestore.FieldValue
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.SetOptions
+import com.maicon.treinoemcasa.BuildConfig
+import kotlinx.coroutines.channels.awaitClose
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.callbackFlow
+import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.tasks.await
+
+class AuthSyncRepository(private val context: Context) {
+    private val firebaseApp: FirebaseApp? = resolveFirebaseApp(context)
+    private val auth: FirebaseAuth? = firebaseApp?.let { FirebaseAuth.getInstance(it) }
+    private val firestore: FirebaseFirestore? = firebaseApp?.let { FirebaseFirestore.getInstance(it) }
+
+    val sessionFlow: Flow<AuthSession> = if (auth == null) {
+        flowOf(
+            AuthSession(
+                cloudAvailable = false,
+                uid = null,
+                email = null,
+                isAnonymous = false
+            )
+        )
+    } else {
+        callbackFlow {
+            val listener = FirebaseAuth.AuthStateListener { firebaseAuth ->
+                val user = firebaseAuth.currentUser
+                trySend(
+                    AuthSession(
+                        cloudAvailable = true,
+                        uid = user?.uid,
+                        email = user?.email,
+                        isAnonymous = user?.isAnonymous == true
+                    )
+                )
+            }
+            auth.addAuthStateListener(listener)
+            awaitClose { auth.removeAuthStateListener(listener) }
+        }
+    }
+
+    suspend fun signIn(email: String, password: String): Result<Unit> {
+        val firebaseAuth = auth ?: return unavailableResult()
+        return runCatching {
+            firebaseAuth.signInWithEmailAndPassword(email.trim(), password).await()
+            Unit
+        }
+    }
+
+    suspend fun signUp(email: String, password: String): Result<Unit> {
+        val firebaseAuth = auth ?: return unavailableResult()
+        return runCatching {
+            firebaseAuth.createUserWithEmailAndPassword(email.trim(), password).await()
+            Unit
+        }
+    }
+
+    suspend fun signInAnonymously(): Result<Unit> {
+        val firebaseAuth = auth ?: return unavailableResult()
+        return runCatching {
+            firebaseAuth.signInAnonymously().await()
+            Unit
+        }
+    }
+
+    fun signOut() {
+        auth?.signOut()
+    }
+
+    suspend fun backup(payload: CloudBackupPayload): Result<Unit> {
+        val firebaseFirestore = firestore ?: return unavailableResult()
+        val user = currentUser() ?: return notAuthenticatedResult()
+
+        return runCatching {
+            val data = payload.toMap().toMutableMap()
+            data["updatedAt"] = FieldValue.serverTimestamp()
+            firebaseFirestore
+                .collection("users")
+                .document(user.uid)
+                .collection("backups")
+                .document("main")
+                .set(data, SetOptions.merge())
+                .await()
+            Unit
+        }
+    }
+
+    suspend fun restore(): Result<CloudBackupPayload> {
+        val firebaseFirestore = firestore ?: return Result.failure(unavailableError())
+        val user = currentUser() ?: return Result.failure(notAuthenticatedError())
+
+        return runCatching {
+            val snapshot = firebaseFirestore
+                .collection("users")
+                .document(user.uid)
+                .collection("backups")
+                .document("main")
+                .get()
+                .await()
+
+            if (!snapshot.exists()) {
+                throw IllegalStateException("Nenhum backup encontrado para esta conta.")
+            }
+
+            val map = snapshot.data
+                ?.filterValues { it != null }
+                ?.mapValues { it.value as Any }
+                ?: throw IllegalStateException("Backup inválido.")
+
+            CloudBackupPayload.fromMap(map)
+                ?: throw IllegalStateException("Não foi possível interpretar o backup salvo.")
+        }
+    }
+
+    private fun currentUser(): FirebaseUser? = auth?.currentUser
+
+    private fun unavailableResult(): Result<Unit> = Result.failure(unavailableError())
+
+    private fun notAuthenticatedResult(): Result<Unit> = Result.failure(notAuthenticatedError())
+
+    private fun unavailableError(): Throwable {
+        return IllegalStateException(
+            "Firebase não configurado. Defina FIREBASE_API_KEY, FIREBASE_APP_ID, FIREBASE_PROJECT_ID, FIREBASE_STORAGE_BUCKET e FIREBASE_MESSAGING_SENDER_ID no Gradle."
+        )
+    }
+
+    private fun notAuthenticatedError(): Throwable {
+        return IllegalStateException("Faça login para usar backup em nuvem.")
+    }
+
+    private fun resolveFirebaseApp(context: Context): FirebaseApp? {
+        FirebaseApp.getApps(context).firstOrNull()?.let { return it }
+
+        if (
+            BuildConfig.FIREBASE_API_KEY.isBlank() ||
+            BuildConfig.FIREBASE_APP_ID.isBlank() ||
+            BuildConfig.FIREBASE_PROJECT_ID.isBlank()
+        ) {
+            return null
+        }
+
+        val optionsBuilder = FirebaseOptions.Builder()
+            .setApiKey(BuildConfig.FIREBASE_API_KEY)
+            .setApplicationId(BuildConfig.FIREBASE_APP_ID)
+            .setProjectId(BuildConfig.FIREBASE_PROJECT_ID)
+
+        if (BuildConfig.FIREBASE_STORAGE_BUCKET.isNotBlank()) {
+            optionsBuilder.setStorageBucket(BuildConfig.FIREBASE_STORAGE_BUCKET)
+        }
+
+        if (BuildConfig.FIREBASE_MESSAGING_SENDER_ID.isNotBlank()) {
+            optionsBuilder.setGcmSenderId(BuildConfig.FIREBASE_MESSAGING_SENDER_ID)
+        }
+
+        return runCatching {
+            FirebaseApp.initializeApp(context, optionsBuilder.build())
+        }.getOrNull()
+    }
+}

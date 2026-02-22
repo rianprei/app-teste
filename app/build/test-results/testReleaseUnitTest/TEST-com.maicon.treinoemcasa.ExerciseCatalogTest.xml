@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.maicon.treinoemcasa.ExerciseCatalogTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-02-22T20:09:43" hostname="maicon-Z390-AORUS-ELITE" time="0.019">
+  <properties/>
+  <testcase name="push up should include progression metadata" classname="com.maicon.treinoemcasa.ExerciseCatalogTest" time="0.018"/>
+  <testcase name="all exercises should expose scientific references" classname="com.maicon.treinoemcasa.ExerciseCatalogTest" time="0.0"/>
+  <testcase name="catalog should contain at least 100 exercises" classname="com.maicon.treinoemcasa.ExerciseCatalogTest" time="0.001"/>
+  <testcase name="all exercises should expose curated media links" classname="com.maicon.treinoemcasa.ExerciseCatalogTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

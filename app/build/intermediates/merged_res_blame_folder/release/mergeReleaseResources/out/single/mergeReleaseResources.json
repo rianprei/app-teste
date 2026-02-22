@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.maicon.treinoemcasa.app-release-67:/xml_data_extraction_rules.xml.flat",
+        "source": "com.maicon.treinoemcasa.app-main-68:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.maicon.treinoemcasa.app-release-67:/xml_backup_rules.xml.flat",
+        "source": "com.maicon.treinoemcasa.app-main-68:/xml/backup_rules.xml"
+    }
+]

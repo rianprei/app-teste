@@ -1,0 +1,784 @@
+openjdk version "17.0.18" 2026-01-20
+OpenJDK Runtime Environment (build 17.0.18+8-Ubuntu-124.04.1)
+OpenJDK 64-Bit Server VM (build 17.0.18+8-Ubuntu-124.04.1, mixed mode, sharing)
+> Task :app:clean
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors
+> Task :app:generateDebugBuildConfig
+> Task :app:generateDebugResValues
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:checkDebugAarMetadata
+> Task :app:packageDebugResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:parseDebugLocalResources
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:javaPreCompileDebug
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:processDebugManifestForPackage
+> Task :app:compressDebugAssets
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeDebugResources
+> Task :app:mergeDebugStartupProfile UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders
+> Task :app:checkDebugDuplicateClasses
+> Task :app:validateSigningDebug
+> Task :app:mergeDebugNativeLibs
+> Task :app:writeDebugAppMetadata
+
+> Task :app:stripDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so, libdatastore_shared_counter.so.
+
+> Task :app:mergeLibDexDebug
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:buildKotlinToolingMetadata
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:generateReleaseBuildConfig
+> Task :app:generateReleaseResValues
+> Task :app:checkReleaseAarMetadata
+> Task :app:mapReleaseSourceSetPaths
+> Task :app:generateReleaseResources
+> Task :app:packageReleaseResources
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:processReleaseMainManifest
+> Task :app:parseReleaseLocalResources
+> Task :app:processReleaseManifest
+> Task :app:javaPreCompileRelease
+> Task :app:extractProguardFiles
+> Task :app:mergeReleaseJniLibFolders
+> Task :app:mergeReleaseNativeLibs
+> Task :app:processReleaseManifestForPackage
+> Task :app:desugarReleaseFileDependencies
+> Task :app:mergeReleaseStartupProfile UP-TO-DATE
+> Task :app:processDebugResources
+
+> Task :app:stripReleaseDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so, libdatastore_shared_counter.so.
+
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:mergeReleaseArtProfile
+> Task :app:extractReleaseNativeSymbolTables
+> Task :app:mergeReleaseResources
+> Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders NO-SOURCE
+> Task :app:generateReleaseAssets UP-TO-DATE
+> Task :app:mergeReleaseAssets
+> Task :app:compressReleaseAssets
+> Task :app:extractReleaseVersionControlInfo
+> Task :app:collectReleaseDependencies
+> Task :app:processReleaseResources
+> Task :app:sdkReleaseDependencyData
+> Task :app:writeReleaseAppMetadata
+> Task :app:writeReleaseSigningConfigVersions
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:generateDebugAndroidTestResValues
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:preReleaseUnitTestBuild UP-TO-DATE
+> Task :app:mergeExtDexRelease
+> Task :app:javaPreCompileReleaseUnitTest
+> Task :app:optimizeReleaseResources
+> Task :app:mergeExtDexDebug
+
+> Task :app:compileDebugKotlin FAILED
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:4:19 Unresolved reference: firebase
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:5:19 Unresolved reference: firebase
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:6:19 Unresolved reference: firebase
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:7:19 Unresolved reference: firebase
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:8:19 Unresolved reference: firebase
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:9:19 Unresolved reference: firebase
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:10:19 Unresolved reference: firebase
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:16:27 Unresolved reference: tasks
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:19:30 Unresolved reference: FirebaseApp
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:20:23 Unresolved reference: FirebaseAuth
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:20:58 Unresolved reference: FirebaseAuth
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:20:83 Unresolved reference: it
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:21:28 Unresolved reference: FirebaseFirestore
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:21:68 Unresolved reference: FirebaseFirestore
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:21:98 Unresolved reference: it
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:34:28 Unresolved reference: FirebaseAuth
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:34:61 Cannot infer a type for this parameter. Please specify it explicitly.
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:53:26 Unresolved reference: signInWithEmailAndPassword
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:61:26 Unresolved reference: createUserWithEmailAndPassword
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:69:26 Unresolved reference: signInAnonymously
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:84:33 Unresolved reference: FieldValue
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:86:18 Unresolved reference: collection
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:87:32 Unresolved reference: uid
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:90:28 Unresolved reference: SetOptions
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:102:18 Unresolved reference: collection
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:103:32 Unresolved reference: uid
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:114:34 Unresolved reference: it
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:115:31 Unresolved reference: it
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:123:32 Unresolved reference: FirebaseUser
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:139:55 Unresolved reference: FirebaseApp
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:140:9 Unresolved reference: FirebaseApp
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:140:59 'return' is not allowed here
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:140:66 Unresolved reference: it
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:150:30 Unresolved reference: FirebaseOptions
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:164:13 Unresolved reference: FirebaseApp
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:19:54 Variable 'baseExercises' must be initialized
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:27:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:29:29 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:44:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:46:29 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:61:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:63:38 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:78:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:80:29 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:95:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:97:29 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:112:33 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:115:37 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:129:33 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:132:37 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:149:42 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:607:42 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:659:31 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:741:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:743:29 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:894:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:896:29 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:928:27 Unresolved reference: MOBILITY
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:949:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:951:29 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:967:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:969:29 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:985:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:987:29 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1003:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1005:29 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1021:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1023:40 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1042:31 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1060:31 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1075:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1077:38 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1093:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1095:38 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1291:39 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1293:44 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1309:39 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1311:44 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1345:33 Unresolved reference: MOBILITY
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1708:31 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1779:46 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1794:31 Unresolved reference: MOBILITY
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1795:39 Unresolved reference: MOBILITY
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1834:31 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1849:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1851:29 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1884:31 Unresolved reference: MOBILITY
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1885:27 Unresolved reference: MOBILITY
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1902:31 Unresolved reference: MOBILITY
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1903:27 Unresolved reference: MOBILITY
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1920:31 Unresolved reference: MOBILITY
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1921:27 Unresolved reference: MOBILITY
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1996:52 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:2067:28 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:2068:28 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/features/challenges/WeeklyEvolutionChart.kt:68:43 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/features/challenges/WeeklyEvolutionChart.kt:74:43 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/features/challenges/WeeklyEvolutionChart.kt:108:36 Unresolved reference: nativeCanvas
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/features/challenges/WeeklyEvolutionChart.kt:114:21 Unresolved reference: drawText
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/features/challenges/WeeklyEvolutionChart.kt:115:21 Unresolved reference: drawText
+
+> Task :app:compileReleaseKotlin FAILED
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:4:19 Unresolved reference: firebase
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:5:19 Unresolved reference: firebase
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:6:19 Unresolved reference: firebase
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:7:19 Unresolved reference: firebase
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:8:19 Unresolved reference: firebase
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:9:19 Unresolved reference: firebase
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:10:19 Unresolved reference: firebase
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:16:27 Unresolved reference: tasks
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:19:30 Unresolved reference: FirebaseApp
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:20:23 Unresolved reference: FirebaseAuth
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:20:58 Unresolved reference: FirebaseAuth
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:20:83 Unresolved reference: it
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:21:28 Unresolved reference: FirebaseFirestore
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:21:68 Unresolved reference: FirebaseFirestore
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:21:98 Unresolved reference: it
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:34:28 Unresolved reference: FirebaseAuth
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:34:61 Cannot infer a type for this parameter. Please specify it explicitly.
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:53:26 Unresolved reference: signInWithEmailAndPassword
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:61:26 Unresolved reference: createUserWithEmailAndPassword
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:69:26 Unresolved reference: signInAnonymously
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:84:33 Unresolved reference: FieldValue
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:86:18 Unresolved reference: collection
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:87:32 Unresolved reference: uid
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:90:28 Unresolved reference: SetOptions
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:102:18 Unresolved reference: collection
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:103:32 Unresolved reference: uid
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:114:34 Unresolved reference: it
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:115:31 Unresolved reference: it
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:123:32 Unresolved reference: FirebaseUser
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:139:55 Unresolved reference: FirebaseApp
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:140:9 Unresolved reference: FirebaseApp
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:140:59 'return' is not allowed here
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:140:66 Unresolved reference: it
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:150:30 Unresolved reference: FirebaseOptions
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/AuthSyncRepository.kt:164:13 Unresolved reference: FirebaseApp
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:19:54 Variable 'baseExercises' must be initialized
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:27:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:29:29 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:44:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:46:29 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:61:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:63:38 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:78:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:80:29 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:95:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:97:29 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:112:33 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:115:37 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:129:33 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:132:37 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:149:42 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:607:42 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:659:31 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:741:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:743:29 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:894:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:896:29 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:928:27 Unresolved reference: MOBILITY
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:949:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:951:29 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:967:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:969:29 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:985:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:987:29 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1003:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1005:29 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1021:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1023:40 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1042:31 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1060:31 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1075:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1077:38 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1093:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1095:38 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1291:39 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1293:44 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1309:39 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1311:44 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1345:33 Unresolved reference: MOBILITY
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1708:31 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1779:46 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1794:31 Unresolved reference: MOBILITY
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1795:39 Unresolved reference: MOBILITY
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1834:31 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1849:27 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1851:29 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1884:31 Unresolved reference: MOBILITY
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1885:27 Unresolved reference: MOBILITY
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1902:31 Unresolved reference: MOBILITY
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1903:27 Unresolved reference: MOBILITY
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1920:31 Unresolved reference: MOBILITY
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1921:27 Unresolved reference: MOBILITY
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:1996:52 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:2067:28 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/data/ExerciseCatalog.kt:2068:28 Unresolved reference: CHEST
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/features/challenges/WeeklyEvolutionChart.kt:68:43 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/features/challenges/WeeklyEvolutionChart.kt:74:43 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/features/challenges/WeeklyEvolutionChart.kt:108:36 Unresolved reference: nativeCanvas
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/features/challenges/WeeklyEvolutionChart.kt:114:21 Unresolved reference: drawText
+e: file:///home/maicon/Documentos/treino/app/src/main/java/com/maicon/treinoemcasa/features/challenges/WeeklyEvolutionChart.kt:115:21 Unresolved reference: drawText
+
+FAILURE: Build completed with 2 failures.
+
+1: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':app:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:compileDebugKotlin'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:148)
+	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:282)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:146)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:134)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:80)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:463)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:380)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionException: A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+	at org.gradle.workers.internal.DefaultWorkerExecutor$WorkItemExecution.waitForCompletion(DefaultWorkerExecutor.java:283)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.lambda$waitForItemsAndGatherFailures$2(DefaultAsyncWorkTracker.java:130)
+	at org.gradle.internal.Factories$1.create(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:336)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:319)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLock(DefaultWorkerLeaseService.java:324)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:126)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:92)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForAll(DefaultAsyncWorkTracker.java:78)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForCompletion(DefaultAsyncWorkTracker.java:66)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:255)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:47)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:68)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeAction(TaskExecution.java:232)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeActions(TaskExecution.java:215)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeWithPreviousOutputFiles(TaskExecution.java:198)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.execute(TaskExecution.java:165)
+	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
+	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:41)
+	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:74)
+	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
+	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:50)
+	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:28)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:67)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:37)
+	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:61)
+	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:26)
+	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:64)
+	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:42)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:40)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:29)
+	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:189)
+	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$1(BuildCacheStep.java:75)
+	at org.gradle.internal.Either$Right.fold(Either.java:175)
+	at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:59)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:73)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:48)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:44)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:33)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.executeBecause(SkipUpToDateStep.java:76)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.lambda$execute$2(SkipUpToDateStep.java:54)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:54)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:36)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:65)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:36)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:37)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:27)
+	at org.gradle.internal.execution.steps.ResolveCachingStateStep.execute(ResolveCachingStateStep.java:76)
+	at org.gradle.internal.execution.steps.ResolveCachingStateStep.execute(ResolveCachingStateStep.java:37)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:106)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:55)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:64)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:43)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.executeWithNonEmptySources(AbstractSkipEmptyWorkStep.java:125)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:61)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:36)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:75)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:41)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.lambda$execute$0(AssignMutableWorkspaceStep.java:35)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:292)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:31)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:22)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:40)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:66)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:66)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:38)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:36)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:26)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:47)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:34)
+	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:145)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:134)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:80)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:463)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:380)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+Caused by: org.jetbrains.kotlin.gradle.tasks.CompilationErrorException: Compilation error. See log for more details
+	at org.jetbrains.kotlin.gradle.tasks.TasksUtilsKt.throwExceptionIfCompilationFailed(tasksUtils.kt:20)
+	at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.run(GradleKotlinCompilerWork.kt:141)
+	at org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction.execute(GradleCompilerRunnerWithWorkers.kt:73)
+	at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
+	at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
+	at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:170)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:187)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:120)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:162)
+	at org.gradle.internal.Factories$1.create(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:264)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:128)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:133)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:157)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:126)
+	... 2 more
+
+==============================================================================
+
+2: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':app:compileReleaseKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:compileReleaseKotlin'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:148)
+	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:282)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:146)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:134)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:80)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:463)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:380)
+	at org.gradle.execution.plan.DefaultPlanExecutor.process(DefaultPlanExecutor.java:116)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.executeWithServices(DefaultTaskExecutionGraph.java:138)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.execute(DefaultTaskExecutionGraph.java:123)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:35)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:51)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:54)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:43)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor.execute(BuildOperationFiringBuildWorkerExecutor.java:40)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$executeTasks$10(DefaultBuildLifecycleController.java:313)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+	at org.gradle.internal.model.StateTransitionController.lambda$tryTransition$8(StateTransitionController.java:177)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:44)
+	at org.gradle.internal.model.StateTransitionController.tryTransition(StateTransitionController.java:177)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.executeTasks(DefaultBuildLifecycleController.java:304)
+	at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.runWork(DefaultBuildWorkGraphController.java:220)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:264)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:128)
+	at org.gradle.composite.internal.DefaultBuildController.doRun(DefaultBuildController.java:181)
+	at org.gradle.composite.internal.DefaultBuildController.access$000(DefaultBuildController.java:50)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.lambda$run$0(DefaultBuildController.java:198)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:80)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:198)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionException: A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+	at org.gradle.workers.internal.DefaultWorkerExecutor$WorkItemExecution.waitForCompletion(DefaultWorkerExecutor.java:283)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.lambda$waitForItemsAndGatherFailures$2(DefaultAsyncWorkTracker.java:130)
+	at org.gradle.internal.Factories$1.create(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:336)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:319)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLock(DefaultWorkerLeaseService.java:324)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:126)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:92)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForAll(DefaultAsyncWorkTracker.java:78)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForCompletion(DefaultAsyncWorkTracker.java:66)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:255)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:47)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:68)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeAction(TaskExecution.java:232)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeActions(TaskExecution.java:215)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeWithPreviousOutputFiles(TaskExecution.java:198)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.execute(TaskExecution.java:165)
+	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
+	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:41)
+	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:74)
+	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
+	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:50)
+	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:28)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:67)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:37)
+	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:61)
+	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:26)
+	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:64)
+	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:42)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:40)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:29)
+	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:189)
+	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$1(BuildCacheStep.java:75)
+	at org.gradle.internal.Either$Right.fold(Either.java:175)
+	at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:59)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:73)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:48)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:44)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:33)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.executeBecause(SkipUpToDateStep.java:76)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.lambda$execute$2(SkipUpToDateStep.java:54)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:54)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:36)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:65)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:36)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:37)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:27)
+	at org.gradle.internal.execution.steps.ResolveCachingStateStep.execute(ResolveCachingStateStep.java:76)
+	at org.gradle.internal.execution.steps.ResolveCachingStateStep.execute(ResolveCachingStateStep.java:37)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:106)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:55)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:64)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:43)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.executeWithNonEmptySources(AbstractSkipEmptyWorkStep.java:125)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:61)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:36)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:75)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:41)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.lambda$execute$0(AssignMutableWorkspaceStep.java:35)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:292)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:31)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:22)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:40)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:66)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:66)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:38)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:36)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:26)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:47)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:34)
+	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:145)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:134)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:80)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:463)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:380)
+	at org.gradle.execution.plan.DefaultPlanExecutor.process(DefaultPlanExecutor.java:116)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.executeWithServices(DefaultTaskExecutionGraph.java:138)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.execute(DefaultTaskExecutionGraph.java:123)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:35)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:51)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:54)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:43)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor.execute(BuildOperationFiringBuildWorkerExecutor.java:40)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$executeTasks$10(DefaultBuildLifecycleController.java:313)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+	at org.gradle.internal.model.StateTransitionController.lambda$tryTransition$8(StateTransitionController.java:177)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:44)
+	at org.gradle.internal.model.StateTransitionController.tryTransition(StateTransitionController.java:177)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.executeTasks(DefaultBuildLifecycleController.java:304)
+	at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.runWork(DefaultBuildWorkGraphController.java:220)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:264)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:128)
+	at org.gradle.composite.internal.DefaultBuildController.doRun(DefaultBuildController.java:181)
+	at org.gradle.composite.internal.DefaultBuildController.access$000(DefaultBuildController.java:50)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.lambda$run$0(DefaultBuildController.java:198)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:80)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:198)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.jetbrains.kotlin.gradle.tasks.CompilationErrorException: Compilation error. See log for more details
+	at org.jetbrains.kotlin.gradle.tasks.TasksUtilsKt.throwExceptionIfCompilationFailed(tasksUtils.kt:20)
+	at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.run(GradleKotlinCompilerWork.kt:141)
+	at org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction.execute(GradleCompilerRunnerWithWorkers.kt:73)
+	at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
+	at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
+	at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:170)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:187)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:120)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:162)
+	at org.gradle.internal.Factories$1.create(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:264)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:128)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:133)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:157)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:126)
+	... 7 more
+
+==============================================================================
+
+BUILD FAILED in 12s
+71 actionable tasks: 69 executed, 2 up-to-date
